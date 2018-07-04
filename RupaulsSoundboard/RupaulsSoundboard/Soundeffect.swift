@@ -15,6 +15,6 @@ class Soundeffect {
     
     init(image: String, sound: String) {
         self.imagePath = image
-        self.soundPath = sound
+//        self.soundPath = sound
     }
 }

@@ -70,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				6F234D4220E96BA20050DED9 /* RupaulsSoundboard */,
+				6F234D6E20EC02410050DED9 /* Sounds */,
 				6F234D5720E96BA40050DED9 /* RupaulsSoundboardTests */,
 				6F234D4120E96BA20050DED9 /* Products */,
 			);
@@ -117,6 +118,13 @@
 				6F234D6520E96D3D0050DED9 /* UIView+Animation.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6F234D6E20EC02410050DED9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
