@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ypR-jd-TKP">
-                                <rect key="frame" x="20" y="136" width="335" height="451"/>
+                                <rect key="frame" x="20" y="136" width="335" height="254"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Scx-qS-2eG">
                                     <size key="itemSize" width="50" height="50"/>
@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="soundEffectCell" id="WAV-fe-r22">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="soundEffectCell" id="WAV-fe-r22" customClass="SoundeffectCell" customModule="RupaulsSoundboard" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -39,13 +39,15 @@
                                 </cells>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Svd-Aw-zbn">
-                                <rect key="frame" x="147.5" y="587" width="80" height="30"/>
+                                <rect key="frame" x="-24.5" y="415" width="424" height="202"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbG-vx-gG9">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbG-vx-gG9">
+                                        <rect key="frame" x="0.0" y="0.0" width="202" height="202"/>
+                                        <state key="normal" image="cell"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozn-OG-akX">
-                                        <rect key="frame" x="50" y="0.0" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozn-OG-akX">
+                                        <rect key="frame" x="222" y="0.0" width="202" height="202"/>
+                                        <state key="normal" image="cell"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,7 +69,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Svd-Aw-zbn" firstAttribute="top" secondItem="ypR-jd-TKP" secondAttribute="bottom" id="1NX-yG-4EX"/>
+                            <constraint firstItem="Svd-Aw-zbn" firstAttribute="top" secondItem="ypR-jd-TKP" secondAttribute="bottom" constant="25" id="1NX-yG-4EX"/>
                             <constraint firstItem="ypR-jd-TKP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BlW-ag-s3b"/>
                             <constraint firstItem="ypR-jd-TKP" firstAttribute="top" secondItem="7Ym-3D-hff" secondAttribute="bottom" id="TDl-Zg-tgG"/>
                             <constraint firstItem="7Ym-3D-hff" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YHe-7I-8zY"/>
@@ -80,6 +82,9 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="ypR-jd-TKP" id="256-dd-Fea"/>
+                        <outlet property="randomButton" destination="Ozn-OG-akX" id="ozY-0M-vAe"/>
+                        <outlet property="stackView" destination="Svd-Aw-zbn" id="CV1-Vn-r6A"/>
+                        <outlet property="stopSoundButton" destination="BbG-vx-gG9" id="Udh-gG-cDJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -89,5 +94,6 @@
     </scenes>
     <resources>
         <image name="RuPaulLogo" width="297" height="167"/>
+        <image name="cell" width="202" height="202"/>
     </resources>
 </document>

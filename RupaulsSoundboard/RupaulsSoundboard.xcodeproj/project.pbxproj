@@ -70,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				6F234D4220E96BA20050DED9 /* RupaulsSoundboard */,
-				6F234D6E20EC02410050DED9 /* Sounds */,
+				89F0752320ED05EC0067DD89 /* Sounds */,
 				6F234D5720E96BA40050DED9 /* RupaulsSoundboardTests */,
 				6F234D4120E96BA20050DED9 /* Products */,
 			);
@@ -120,7 +120,7 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		6F234D6E20EC02410050DED9 /* Sounds */ = {
+		89F0752320ED05EC0067DD89 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
 			);

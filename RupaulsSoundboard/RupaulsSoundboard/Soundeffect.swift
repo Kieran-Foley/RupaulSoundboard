@@ -12,9 +12,11 @@ class Soundeffect {
     
     let imagePath: String
     let soundPath: String
+    let title:String
     
-    init(image: String, sound: String) {
+    init(image: String, sound: String, title: String) {
         self.imagePath = image
-//        self.soundPath = sound
+        self.soundPath = sound
+        self.title = title
     }
 }

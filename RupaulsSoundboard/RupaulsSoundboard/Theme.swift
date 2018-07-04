@@ -12,6 +12,7 @@ import UIKit
 extension UIColor {
     
     static let GCPink = GetPink()
+    static let RPPurple = getPurple()
     
     class func fromHex(_ value: Int) -> UIColor {
         return fromHex(value, alpha: 1.0)
@@ -26,6 +27,10 @@ extension UIColor {
     }
     
     class func GetPink() -> UIColor {
+        return fromHex(0xff1493)
+    }
+    
+    class func getPurple() -> UIColor {
         return fromHex(0xff1493)
     }
 }
