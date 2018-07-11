@@ -12,6 +12,8 @@ target 'RupaulsSoundboard' do
     # Pods for testing
   end
 
-pod 'Google-AdMob-Ads-SDK'
+pod 'Google-Mobile-Ads-SDK'
+
+
 
 end

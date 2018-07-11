@@ -36,16 +36,14 @@ class SoundeffectCell: UICollectionViewCell {
         self.titleLabel.textAlignment = .center
         self.titleLabel.textColor = UIColor.getPurple()
         self.titleLabel.font = UIFont(name: "Effra", size: 12)
-        self.titleLabel.font = UIFont.boldSystemFont(ofSize: 20.0)
-        
-        
+        self.titleLabel.font = UIFont.boldSystemFont(ofSize: 18.0)
+        self.titleLabel.transform = CGAffineTransform(rotationAngle: -0.175)
+        self.titleLabel.numberOfLines = 3
         
         self.addSubview(imageView)
         self.addSubview(titleLabel)
         
         self.bringSubview(toFront: titleLabel)
-
-
     }
     
     // Cell pressed

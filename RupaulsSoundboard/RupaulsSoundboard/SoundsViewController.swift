@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import GoogleMobileAds
 
-class SoundsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
+class SoundsViewController: UIViewController, GADBannerViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+
+    // Actual Key = ca-app-pub-1725298510457190/1645558705
+    private static let AD_UNIT_ID: String = "ca-app-pub-3940256099942544/2934735716"
     
     private static let SOUNDEFFECTS: [Soundeffect] = [
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
+        Soundeffect.init(image: "cell.png", sound: "", title: "Back Rolls?"),
         Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
         Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
         Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
@@ -56,6 +59,8 @@ class SoundsViewController: UIViewController, UICollectionViewDelegate, UICollec
     // Plays a random sound from SOUNDEFFECTS
     @IBOutlet weak var randomButton: UIButton!
     
+    fileprivate var bannerView: GADBannerView!
+
     
     
     var cellSpacing: CGFloat?
@@ -66,6 +71,14 @@ class SoundsViewController: UIViewController, UICollectionViewDelegate, UICollec
         super.viewDidLoad()
         
         setupBackground()
+        
+        // adMob
+        bannerView = GADBannerView(adSize: kGADAdSizeBanner)
+        
+        addBannerViewToView(bannerView)
+        bannerView.adUnitID = SoundsViewController.AD_UNIT_ID
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
         
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -87,6 +100,16 @@ class SoundsViewController: UIViewController, UICollectionViewDelegate, UICollec
         self.view.layer.insertSublayer(gradient, at: 0)
     }
     
+    // Set adMob banners constraints to safe area
+    func addBannerViewToView(_ bannerView: GADBannerView) {
+        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(bannerView)
+        
+        let safeArea = self.view.safeAreaLayoutGuide
+        
+        bannerView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: 0).isActive = true
+        bannerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
+    }
     
     
     
@@ -104,9 +127,9 @@ class SoundsViewController: UIViewController, UICollectionViewDelegate, UICollec
                 stackView.spacing = cellSpacing!
                 
                 // Cell constaints
-                stopSoundButton.widthAnchor.constraint(equalToConstant: cellDimensions!).isActive = true
+                stopSoundButton.widthAnchor.constraint(equalToConstant: cellDimensions!*2).isActive = true
                 stopSoundButton.heightAnchor.constraint(equalToConstant: cellDimensions!).isActive = true
-                randomButton.widthAnchor.constraint(equalToConstant: cellDimensions!).isActive = true
+                randomButton.widthAnchor.constraint(equalToConstant: cellDimensions!*2).isActive = true
                 randomButton.heightAnchor.constraint(equalToConstant: cellDimensions!).isActive = true
             }
         }

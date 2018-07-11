@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ypR-jd-TKP">
-                                <rect key="frame" x="20" y="136" width="335" height="254"/>
+                                <rect key="frame" x="20" y="136" width="335" height="252"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Scx-qS-2eG">
                                     <size key="itemSize" width="50" height="50"/>
@@ -39,15 +39,15 @@
                                 </cells>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Svd-Aw-zbn">
-                                <rect key="frame" x="-24.5" y="415" width="424" height="202"/>
+                                <rect key="frame" x="-226.5" y="400.5" width="828" height="204"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbG-vx-gG9">
-                                        <rect key="frame" x="0.0" y="0.0" width="202" height="202"/>
-                                        <state key="normal" image="cell"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="404" height="204"/>
+                                        <state key="normal" image="controlCell"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozn-OG-akX">
-                                        <rect key="frame" x="222" y="0.0" width="202" height="202"/>
-                                        <state key="normal" image="cell"/>
+                                        <rect key="frame" x="424" y="0.0" width="404" height="204"/>
+                                        <state key="normal" image="controlCell"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -69,11 +69,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Svd-Aw-zbn" firstAttribute="top" secondItem="ypR-jd-TKP" secondAttribute="bottom" constant="25" id="1NX-yG-4EX"/>
+                            <constraint firstItem="Svd-Aw-zbn" firstAttribute="top" secondItem="ypR-jd-TKP" secondAttribute="bottom" constant="12.5" id="1NX-yG-4EX"/>
                             <constraint firstItem="ypR-jd-TKP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BlW-ag-s3b"/>
                             <constraint firstItem="ypR-jd-TKP" firstAttribute="top" secondItem="7Ym-3D-hff" secondAttribute="bottom" id="TDl-Zg-tgG"/>
                             <constraint firstItem="7Ym-3D-hff" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YHe-7I-8zY"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Svd-Aw-zbn" secondAttribute="bottom" constant="50" id="b4e-Ct-dxV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Svd-Aw-zbn" secondAttribute="bottom" constant="62.5" id="b4e-Ct-dxV"/>
                             <constraint firstItem="Svd-Aw-zbn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kt8-S6-S22"/>
                             <constraint firstItem="7Ym-3D-hff" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="8" id="ucg-Mv-bku"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ypR-jd-TKP" secondAttribute="trailing" constant="20" id="vw1-zd-6QM"/>
@@ -94,6 +94,6 @@
     </scenes>
     <resources>
         <image name="RuPaulLogo" width="297" height="167"/>
-        <image name="cell" width="202" height="202"/>
+        <image name="controlCell" width="404" height="204"/>
     </resources>
 </document>
