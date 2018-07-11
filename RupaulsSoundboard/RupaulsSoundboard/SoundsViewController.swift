@@ -145,7 +145,13 @@ class SoundsViewController: UIViewController, GADBannerViewDelegate, UICollectio
         return cell
     }
     
+    @IBAction func stopSoundPushed(_ sender: UIButton) {
+        sender.pulse()
+    }
     
+    @IBAction func randomSoundPushed(_ sender: UIButton) {
+        sender.pulse()
+    }
     
     
 }

@@ -23,12 +23,16 @@ extension UIView {
     }
     
     func pulse() {
-        UIView.animate(withDuration:1, delay: 0, options: [.repeat] ,animations: {
+        UIView.animate(withDuration:0, delay: 0, options: [] ,animations: {
             self.alpha = 1
         }) { _ in
-            UIView.animate(withDuration: 2, delay: 2, options: [], animations: {
+            UIView.animate(withDuration: 0.25, delay: 0, options: [], animations: {
                 self.alpha = 0.5
-            })
+            }){ _ in
+                UIView.animate(withDuration: 0.25, delay: 0, options: [], animations: {
+                    self.alpha = 1
+                })
+            }
         }
     }
 }

@@ -44,10 +44,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BbG-vx-gG9">
                                         <rect key="frame" x="0.0" y="0.0" width="404" height="204"/>
                                         <state key="normal" image="controlCell"/>
+                                        <connections>
+                                            <action selector="stopSoundPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZJh-98-rNS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozn-OG-akX">
                                         <rect key="frame" x="424" y="0.0" width="404" height="204"/>
                                         <state key="normal" image="controlCell"/>
+                                        <connections>
+                                            <action selector="randomSoundPushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wQF-s2-oUG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

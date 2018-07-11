@@ -34,7 +34,7 @@ class SoundeffectCell: UICollectionViewCell {
         self.titleLabel.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
 
         self.titleLabel.textAlignment = .center
-        self.titleLabel.textColor = UIColor.getPurple()
+        self.titleLabel.textColor = UIColor.getSilver()
         self.titleLabel.font = UIFont(name: "Effra", size: 12)
         self.titleLabel.font = UIFont.boldSystemFont(ofSize: 18.0)
         self.titleLabel.transform = CGAffineTransform(rotationAngle: -0.175)

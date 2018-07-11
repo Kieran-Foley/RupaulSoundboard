@@ -33,4 +33,9 @@ extension UIColor {
     class func getPurple() -> UIColor {
         return fromHex(0xff1493)
     }
+    
+    class func getSilver() -> UIColor {
+        return fromHex(0xc0c0c0)
+    }
+
 }

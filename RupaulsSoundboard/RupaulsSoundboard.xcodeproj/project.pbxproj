@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49D4A7B8DF9CD5755038F495 /* Pods_RupaulsSoundboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C275EC1218CB1350941507 /* Pods_RupaulsSoundboardTests.framework */; };
+		6C59F079B27F7C8F205178F4 /* Pods_RupaulsSoundboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71815521EAD651117A1FA817 /* Pods_RupaulsSoundboard.framework */; };
 		6F234D4420E96BA20050DED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F234D4320E96BA20050DED9 /* AppDelegate.swift */; };
 		6F234D4620E96BA20050DED9 /* SoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F234D4520E96BA20050DED9 /* SoundsViewController.swift */; };
 		6F234D4920E96BA20050DED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F234D4720E96BA20050DED9 /* Main.storyboard */; };
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C59F079B27F7C8F205178F4 /* Pods_RupaulsSoundboard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
