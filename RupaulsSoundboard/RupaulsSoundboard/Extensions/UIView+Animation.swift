@@ -26,8 +26,8 @@ extension UIView {
         UIView.animate(withDuration:0, delay: 0, options: [] ,animations: {
             self.alpha = 1
         }) { _ in
-            UIView.animate(withDuration: 0.25, delay: 0, options: [], animations: {
-                self.alpha = 0.5
+            UIView.animate(withDuration: 0, delay: 0, options: [], animations: {
+                self.alpha = 0.3
             }){ _ in
                 UIView.animate(withDuration: 0.25, delay: 0, options: [], animations: {
                     self.alpha = 1

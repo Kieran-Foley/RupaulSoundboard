@@ -15,35 +15,35 @@ class SoundsViewController: UIViewController, GADBannerViewDelegate, UICollectio
     private static let AD_UNIT_ID: String = "ca-app-pub-3940256099942544/2934735716"
     
     private static let SOUNDEFFECTS: [Soundeffect] = [
-        Soundeffect.init(image: "cell.png", sound: "", title: "Back Rolls?"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
+        Soundeffect.init(image: "cellRound.png", sound: "backrolls", title: "Back Rolls?"),
+        Soundeffect.init(image: "cellRound.png", sound: "PartyCity", title: "Party City"),
+        Soundeffect.init(image: "cellRound.png", sound: "showGirl", title: "Show Girl"),
+        Soundeffect.init(image: "cellRound.png", sound: "whenImGoodImGood", title: "I'm\nGood"),
         
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test"),
-        Soundeffect.init(image: "cell.png", sound: "", title: "Test")
+        Soundeffect.init(image: "cellRound.png", sound: "Anus", title: "Anus"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test")
     ]
     
     
@@ -61,8 +61,6 @@ class SoundsViewController: UIViewController, GADBannerViewDelegate, UICollectio
     
     fileprivate var bannerView: GADBannerView!
 
-    
-    
     var cellSpacing: CGFloat?
     var cellDimensions: CGFloat?
     
@@ -100,6 +98,7 @@ class SoundsViewController: UIViewController, GADBannerViewDelegate, UICollectio
         self.view.layer.insertSublayer(gradient, at: 0)
     }
     
+
     // Set adMob banners constraints to safe area
     func addBannerViewToView(_ bannerView: GADBannerView) {
         bannerView.translatesAutoresizingMaskIntoConstraints = false
@@ -110,8 +109,6 @@ class SoundsViewController: UIViewController, GADBannerViewDelegate, UICollectio
         bannerView.bottomAnchor.constraint(equalTo: safeArea.bottomAnchor, constant: 0).isActive = true
         bannerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0).isActive = true
     }
-    
-    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -147,12 +144,22 @@ class SoundsViewController: UIViewController, GADBannerViewDelegate, UICollectio
     
     @IBAction func stopSoundPushed(_ sender: UIButton) {
         sender.pulse()
+        AudioManager.singleton.stopAll()
     }
     
     @IBAction func randomSoundPushed(_ sender: UIButton) {
         sender.pulse()
+        
+        // Gets the amount of sounds in instance
+        let count = UInt32(SoundsViewController.SOUNDEFFECTS.count)
+        // Gets a random number between 0 and count
+        let randomNum:Int = Int(arc4random_uniform(count))
+        let sound = SoundsViewController.SOUNDEFFECTS[randomNum]
+        print(randomNum)
+        AudioManager.singleton.randomNo(sounds: [sound.soundPath])
     }
     
     
 }
+
 

@@ -28,15 +28,13 @@ class SoundeffectCell: UICollectionViewCell {
         self.imageView.image = UIImage(named: soundeffect.imagePath)!
         self.imageView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         
-        
-        
         self.titleLabel.text = soundeffect.title
-        self.titleLabel.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
+        self.titleLabel.frame = CGRect(x: 5, y: 5, width: self.frame.width-10, height: self.frame.height-10)
 
         self.titleLabel.textAlignment = .center
         self.titleLabel.textColor = UIColor.getSilver()
-        self.titleLabel.font = UIFont(name: "Effra", size: 12)
-        self.titleLabel.font = UIFont.boldSystemFont(ofSize: 18.0)
+        self.titleLabel.font = UIFont(name: "Arial", size: 12)
+        self.titleLabel.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.black)
         self.titleLabel.transform = CGAffineTransform(rotationAngle: -0.175)
         self.titleLabel.numberOfLines = 3
         
@@ -50,6 +48,6 @@ class SoundeffectCell: UICollectionViewCell {
     @objc func tap(sender: UITapGestureRecognizer){
         // Animates cell
         self.spin()
-//        AudioManager.singleton.playSound(name: (soundeffect?.soundPath)!)
+        AudioManager.singleton.playSound(name: (soundeffect?.soundPath)!)
     }
 }

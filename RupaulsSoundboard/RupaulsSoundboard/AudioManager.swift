@@ -16,6 +16,7 @@ class AudioManager {
     var player: AVAudioPlayer?
     
   func playSound(name:String) {
+    print(name)
         guard let url = Bundle.main.url(forResource: name, withExtension: "mp3") else { return }
     
         do {
