@@ -21,16 +21,16 @@ class SoundsViewController: UIViewController, GADBannerViewDelegate, UICollectio
         Soundeffect.init(image: "cellRound.png", sound: "whenImGoodImGood", title: "I'm\nGood"),
         
         Soundeffect.init(image: "cellRound.png", sound: "Anus", title: "Anus"),
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+        Soundeffect.init(image: "cellRound.png", sound: "whatsGoingOn", title: "What's going on?"),
+        Soundeffect.init(image: "cellRound.png", sound: "vanjie", title: "Vanjie"),
+        Soundeffect.init(image: "cellRound.png", sound: "ilike", title: "I Like..."),
+
+        Soundeffect.init(image: "cellRound.png", sound: "poundcake", title: "Pound-\ncake"),
+        Soundeffect.init(image: "cellRound.png", sound: "getThose", title: "Get Those\n..."),
+        Soundeffect.init(image: "cellRound.png", sound: "mayaAngelou", title: "Maya Angelou"),
+        Soundeffect.init(image: "cellRound.png", sound: "itsDone", title: "It's Done"),
+
+        Soundeffect.init(image: "cellRound.png", sound: "in87", title: "Back\nIn\n87")
 //        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
 //        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
 //        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),

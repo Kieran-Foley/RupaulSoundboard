@@ -29,12 +29,12 @@ class SoundeffectCell: UICollectionViewCell {
         self.imageView.frame = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
         
         self.titleLabel.text = soundeffect.title
-        self.titleLabel.frame = CGRect(x: 5, y: 5, width: self.frame.width-10, height: self.frame.height-10)
+        self.titleLabel.frame = CGRect(x: 2, y: 2, width: self.frame.width-4, height: self.frame.height-4)
 
         self.titleLabel.textAlignment = .center
         self.titleLabel.textColor = UIColor.getSilver()
         self.titleLabel.font = UIFont(name: "Arial", size: 12)
-        self.titleLabel.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.black)
+        self.titleLabel.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.black)
         self.titleLabel.transform = CGAffineTransform(rotationAngle: -0.175)
         self.titleLabel.numberOfLines = 3
         
