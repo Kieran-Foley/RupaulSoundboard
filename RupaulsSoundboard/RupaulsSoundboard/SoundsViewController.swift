@@ -30,8 +30,8 @@ class SoundsViewController: UIViewController, GADBannerViewDelegate, UICollectio
         Soundeffect.init(image: "cellRound.png", sound: "mayaAngelou", title: "Maya Angelou"),
         Soundeffect.init(image: "cellRound.png", sound: "itsDone", title: "It's Done"),
 
-        Soundeffect.init(image: "cellRound.png", sound: "in87", title: "Back\nIn\n87")
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+        Soundeffect.init(image: "cellRound.png", sound: "in87", title: "Back\nIn\n87"),
+        Soundeffect.init(image: "cellRound.png", sound: "BobForPres", title: "Bob\nFor\nPresident")
 //        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
 //        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
 //

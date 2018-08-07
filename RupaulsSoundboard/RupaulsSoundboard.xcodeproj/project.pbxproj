@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49D4A7B8DF9CD5755038F495 /* Pods_RupaulsSoundboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C275EC1218CB1350941507 /* Pods_RupaulsSoundboardTests.framework */; };
+		6F05E0C3211A461B00AA12AD /* BobForPres.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6F05E0C2211A461A00AA12AD /* BobForPres.mp3 */; };
 		6F234D4420E96BA20050DED9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F234D4320E96BA20050DED9 /* AppDelegate.swift */; };
 		6F234D4620E96BA20050DED9 /* SoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F234D4520E96BA20050DED9 /* SoundsViewController.swift */; };
 		6F234D4920E96BA20050DED9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F234D4720E96BA20050DED9 /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 		205566539866BFE5D8F83B34 /* Pods-RupaulsSoundboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RupaulsSoundboardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RupaulsSoundboardTests/Pods-RupaulsSoundboardTests.release.xcconfig"; sourceTree = "<group>"; };
 		4B679900398800B3F2F0FBA9 /* Pods-RupaulsSoundboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RupaulsSoundboardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RupaulsSoundboardTests/Pods-RupaulsSoundboardTests.debug.xcconfig"; sourceTree = "<group>"; };
 		63C275EC1218CB1350941507 /* Pods_RupaulsSoundboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RupaulsSoundboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F05E0C2211A461A00AA12AD /* BobForPres.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BobForPres.mp3; sourceTree = "<group>"; };
 		6F234D4020E96BA20050DED9 /* RupaulsSoundboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RupaulsSoundboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F234D4320E96BA20050DED9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F234D4520E96BA20050DED9 /* SoundsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				6FC5870B211A25860062C011 /* itsDone.mp3 */,
 				6FC5870C211A25860062C011 /* mayaAngelou.mp3 */,
 				6F37FCBE21012B3500AD0201 /* showGirl.mp3 */,
+				6F05E0C2211A461A00AA12AD /* BobForPres.mp3 */,
 				6FC58700211785740062C011 /* vanjie.mp3 */,
 				6FC5870F211A2FCD0062C011 /* in87.mp3 */,
 				6FC586FF2117855E0062C011 /* whatsGoingOn.mp3 */,
@@ -290,6 +293,7 @@
 				6FC58701211785750062C011 /* whatsGoingOn.mp3 in Resources */,
 				6FC58702211785750062C011 /* vanjie.mp3 in Resources */,
 				6FC5870A211A14CE0062C011 /* getThose.mp3 in Resources */,
+				6F05E0C3211A461B00AA12AD /* BobForPres.mp3 in Resources */,
 				6FC587082117893C0062C011 /* ilike.mp3 in Resources */,
 				6F37FCC321012B3500AD0201 /* showGirl.mp3 in Resources */,
 				6F234D4E20E96BA40050DED9 /* LaunchScreen.storyboard in Resources */,
