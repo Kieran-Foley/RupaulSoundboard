@@ -33,6 +33,15 @@
 		6FC5870D211A25860062C011 /* itsDone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FC5870B211A25860062C011 /* itsDone.mp3 */; };
 		6FC5870E211A25860062C011 /* mayaAngelou.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FC5870C211A25860062C011 /* mayaAngelou.mp3 */; };
 		6FC58712211A2FCF0062C011 /* in87.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6FC5870F211A2FCD0062C011 /* in87.mp3 */; };
+		89405EC2211B62DF00AD4FD6 /* thislittlequeen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89405EC1211B62DF00AD4FD6 /* thislittlequeen.mp3 */; };
+		89405EC4211B630D00AD4FD6 /* orange.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89405EC3211B630D00AD4FD6 /* orange.mp3 */; };
+		89405EC7211B631500AD4FD6 /* 450Dollars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89405EC5211B631500AD4FD6 /* 450Dollars.mp3 */; };
+		89405EC8211B631500AD4FD6 /* getCute.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89405EC6211B631500AD4FD6 /* getCute.mp3 */; };
+		89405ECC211B668F00AD4FD6 /* theminute.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89405EC9211B668E00AD4FD6 /* theminute.mp3 */; };
+		89405ECD211B668F00AD4FD6 /* hadIt.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89405ECA211B668E00AD4FD6 /* hadIt.mp3 */; };
+		89405ECE211B668F00AD4FD6 /* irritating.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89405ECB211B668F00AD4FD6 /* irritating.mp3 */; };
+		89405ED1211B6B6500AD4FD6 /* libra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89405ECF211B6B6500AD4FD6 /* libra.mp3 */; };
+		89405ED2211B6B6500AD4FD6 /* onadaily.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 89405ED0211B6B6500AD4FD6 /* onadaily.mp3 */; };
 		A35D6EA1241F6BB0FB4B2FB4 /* Pods_RupaulsSoundboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71815521EAD651117A1FA817 /* Pods_RupaulsSoundboard.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +89,15 @@
 		6FC5870C211A25860062C011 /* mayaAngelou.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mayaAngelou.mp3; sourceTree = "<group>"; };
 		6FC5870F211A2FCD0062C011 /* in87.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = in87.mp3; sourceTree = "<group>"; };
 		71815521EAD651117A1FA817 /* Pods_RupaulsSoundboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RupaulsSoundboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89405EC1211B62DF00AD4FD6 /* thislittlequeen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thislittlequeen.mp3; sourceTree = "<group>"; };
+		89405EC3211B630D00AD4FD6 /* orange.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = orange.mp3; sourceTree = "<group>"; };
+		89405EC5211B631500AD4FD6 /* 450Dollars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 450Dollars.mp3; sourceTree = "<group>"; };
+		89405EC6211B631500AD4FD6 /* getCute.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = getCute.mp3; sourceTree = "<group>"; };
+		89405EC9211B668E00AD4FD6 /* theminute.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = theminute.mp3; sourceTree = "<group>"; };
+		89405ECA211B668E00AD4FD6 /* hadIt.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hadIt.mp3; sourceTree = "<group>"; };
+		89405ECB211B668F00AD4FD6 /* irritating.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = irritating.mp3; sourceTree = "<group>"; };
+		89405ECF211B6B6500AD4FD6 /* libra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = libra.mp3; sourceTree = "<group>"; };
+		89405ED0211B6B6500AD4FD6 /* onadaily.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = onadaily.mp3; sourceTree = "<group>"; };
 		BD0D8755E4AF29F9C0B8902E /* Pods-RupaulsSoundboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RupaulsSoundboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-RupaulsSoundboard/Pods-RupaulsSoundboard.release.xcconfig"; sourceTree = "<group>"; };
 		FD2CAE615B3D0D28EFDEDDCD /* Pods-RupaulsSoundboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RupaulsSoundboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RupaulsSoundboard/Pods-RupaulsSoundboard.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,10 +196,19 @@
 				6F37FCC421012B5700AD0201 /* backrolls.mp3 */,
 				6F37FCBB21012B3400AD0201 /* PartyCity.mp3 */,
 				6FC587072117893C0062C011 /* ilike.mp3 */,
+				89405EC5211B631500AD4FD6 /* 450Dollars.mp3 */,
+				89405EC6211B631500AD4FD6 /* getCute.mp3 */,
 				6FC587042117888E0062C011 /* poundcake.mp3 */,
+				89405ECA211B668E00AD4FD6 /* hadIt.mp3 */,
+				89405ECB211B668F00AD4FD6 /* irritating.mp3 */,
+				89405EC9211B668E00AD4FD6 /* theminute.mp3 */,
 				6FC5870B211A25860062C011 /* itsDone.mp3 */,
 				6FC5870C211A25860062C011 /* mayaAngelou.mp3 */,
+				89405ECF211B6B6500AD4FD6 /* libra.mp3 */,
+				89405ED0211B6B6500AD4FD6 /* onadaily.mp3 */,
+				89405EC3211B630D00AD4FD6 /* orange.mp3 */,
 				6F37FCBE21012B3500AD0201 /* showGirl.mp3 */,
+				89405EC1211B62DF00AD4FD6 /* thislittlequeen.mp3 */,
 				6F05E0C2211A461A00AA12AD /* BobForPres.mp3 */,
 				6FC58700211785740062C011 /* vanjie.mp3 */,
 				6FC5870F211A2FCD0062C011 /* in87.mp3 */,
@@ -286,8 +313,12 @@
 			files = (
 				6FC587062117888E0062C011 /* poundcake.mp3 in Resources */,
 				6F37FCC021012B3500AD0201 /* PartyCity.mp3 in Resources */,
+				89405ECC211B668F00AD4FD6 /* theminute.mp3 in Resources */,
+				89405ED1211B6B6500AD4FD6 /* libra.mp3 in Resources */,
+				89405EC7211B631500AD4FD6 /* 450Dollars.mp3 in Resources */,
 				6FC58712211A2FCF0062C011 /* in87.mp3 in Resources */,
 				6F37FCC521012B5700AD0201 /* backrolls.mp3 in Resources */,
+				89405ECD211B668F00AD4FD6 /* hadIt.mp3 in Resources */,
 				6FC5870D211A25860062C011 /* itsDone.mp3 in Resources */,
 				6FC5870E211A25860062C011 /* mayaAngelou.mp3 in Resources */,
 				6FC58701211785750062C011 /* whatsGoingOn.mp3 in Resources */,
@@ -295,12 +326,17 @@
 				6FC5870A211A14CE0062C011 /* getThose.mp3 in Resources */,
 				6F05E0C3211A461B00AA12AD /* BobForPres.mp3 in Resources */,
 				6FC587082117893C0062C011 /* ilike.mp3 in Resources */,
+				89405EC2211B62DF00AD4FD6 /* thislittlequeen.mp3 in Resources */,
 				6F37FCC321012B3500AD0201 /* showGirl.mp3 in Resources */,
+				89405EC8211B631500AD4FD6 /* getCute.mp3 in Resources */,
+				89405ECE211B668F00AD4FD6 /* irritating.mp3 in Resources */,
 				6F234D4E20E96BA40050DED9 /* LaunchScreen.storyboard in Resources */,
 				6F37FCC221012B3500AD0201 /* whenImGoodImGood.mp3 in Resources */,
 				6F37FCC121012B3500AD0201 /* Anus.mp3 in Resources */,
 				6F234D4B20E96BA40050DED9 /* Assets.xcassets in Resources */,
 				6F234D4920E96BA20050DED9 /* Main.storyboard in Resources */,
+				89405EC4211B630D00AD4FD6 /* orange.mp3 in Resources */,
+				89405ED2211B6B6500AD4FD6 /* onadaily.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

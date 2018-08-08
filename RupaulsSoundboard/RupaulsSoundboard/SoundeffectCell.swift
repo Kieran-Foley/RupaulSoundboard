@@ -33,8 +33,8 @@ class SoundeffectCell: UICollectionViewCell {
 
         self.titleLabel.textAlignment = .center
         self.titleLabel.textColor = UIColor.getSilver()
-        self.titleLabel.font = UIFont(name: "Arial", size: 12)
-        self.titleLabel.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.black)
+        self.titleLabel.font = UIFont(name: "Arial", size: 11)
+        self.titleLabel.font = UIFont.systemFont(ofSize: 13, weight: UIFont.Weight.black)
         self.titleLabel.transform = CGAffineTransform(rotationAngle: -0.175)
         self.titleLabel.numberOfLines = 3
         

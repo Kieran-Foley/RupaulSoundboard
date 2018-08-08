@@ -31,18 +31,18 @@ class SoundsViewController: UIViewController, GADBannerViewDelegate, UICollectio
         Soundeffect.init(image: "cellRound.png", sound: "itsDone", title: "It's Done"),
 
         Soundeffect.init(image: "cellRound.png", sound: "in87", title: "Back\nIn\n87"),
-        Soundeffect.init(image: "cellRound.png", sound: "BobForPres", title: "Bob\nFor\nPresident")
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
-//        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test"),
+        Soundeffect.init(image: "cellRound.png", sound: "BobForPres", title: "Bob\nFor\nPresident"),
+        Soundeffect.init(image: "cellRound.png", sound: "thislittlequeen", title: "This\nLittle\nQueen"),
+        Soundeffect.init(image: "cellRound.png", sound: "getCute", title: "Get\nCute"),
+
+        Soundeffect.init(image: "cellRound.png", sound: "450Dollars", title: "450\nDollars"),
+        Soundeffect.init(image: "cellRound.png", sound: "orange", title: "Orange"),
+        Soundeffect.init(image: "cellRound.png", sound: "hadIt", title: "I've\nHad\nIt"),
+        Soundeffect.init(image: "cellRound.png", sound: "irritating", title: "Irritating"),
+
+        Soundeffect.init(image: "cellRound.png", sound: "theminute", title: "Dat Ass"),
+        Soundeffect.init(image: "cellRound.png", sound: "onadaily", title: "Speak\nIll\nShit"),
+        Soundeffect.init(image: "cellRound.png", sound: "libra", title: "Libra")
 //        Soundeffect.init(image: "cellRound.png", sound: "", title: "Test")
     ]
     
@@ -158,8 +158,4 @@ class SoundsViewController: UIViewController, GADBannerViewDelegate, UICollectio
         print(randomNum)
         AudioManager.singleton.randomNo(sounds: [sound.soundPath])
     }
-    
-    
 }
-
-
